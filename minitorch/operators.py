@@ -10,17 +10,41 @@ from typing import Callable, Iterable
 
 # Mathematical functions:
 # - mul
+def mul(a: float, b: float) -> float:
+    return a*b
 # - id
+def id(a:float)->float:
+    return a
 # - add
+def add(a:float,b:float)->float:
+    return a+b
 # - neg
+def neg(a:float)->float:
+    return -a
 # - lt
+def lt(a:float,b:float)->bool:
+    return a<b
 # - eq
+def eq(a:float,b:float)->bool:
+    return a==b
 # - max
+def max(a:float,b:float)->float:
+    return a if a>b else b
 # - is_close
+def is_close(a:float,b:float)->bool:
+    return abs(a-b)<1e-2
 # - sigmoid
+def sigmoid(a:float)->float:
+    return 1.0/(1.0+math.exp(-a))
 # - relu
+def relu(a:float)->float:
+    return a if a>0 else 0
 # - log
+def log(a:float)->float:
+    return math.log(a)
 # - exp
+def exp(a:float)->float:
+    return math.exp(a)
 # - log_back
 # - inv
 # - inv_back
